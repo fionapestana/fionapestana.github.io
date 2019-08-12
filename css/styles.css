@@ -1,0 +1,273 @@
+/* styles.css 
+   Project: 
+   Author: 
+   Date: 
+	
+   Helpful links: 
+   	Web colors: 
+   		https://en.wikipedia.org/wiki/Web_colors#X11_color_names
+	Color picker tool:
+		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool
+		http://colorpicker.com
+
+*/
+
+.container1, .container2, .container3, .container4, .video, .photogallery {
+   min-width: 350px;
+   box-shadow: 5px 5px 2.5px grey;
+}
+
+.container1 {
+   width: 60%;
+   margin: 0 auto;
+   background-color: white;
+   padding: 5%;
+   margin-top: 10%;
+   padding: 5%;
+}
+
+.container2 {
+   width: 60%;
+   margin: 0 auto;
+   background-color: white;
+   padding: 5%;
+   margin-top: -5%;
+}
+
+.container3 {
+   width: 60%;
+   margin: 0 auto;
+   background-color: white;
+   padding: 5%;
+   margin-top: 5%;
+   margin-bottom: 3%;
+}
+
+.container4 {
+   width: 60%;
+   margin: 0 auto;
+   background-color: white;
+   padding: 5%;
+   margin-top: 5%;
+}
+
+/*Everything from here up is just making sure
+every individual box within the code looks the same
+(especially making sure that the widths and colors match all of the others),
+regardless of their elements.*/
+
+.container1 p {
+   margin-top: 40px;
+}
+
+.container2 p {
+   margin-top: 40px;
+}
+
+.container3 p {
+   margin-top: 40px;
+}
+
+.container4 p {
+   margin-top: 40px;
+}
+
+
+/*These all fix the paragraph spacing within the print article.*/
+
+
+.parallax img {
+   width: 100vw;
+}
+
+.parallax {
+   position: sticky;
+   z-index: -1;
+   top: 0;
+}
+
+.headline {
+   position: static;
+   z-index: 2;
+   margin-top: -30%;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 10px;
+}
+
+/*These all make sure the top parallax looks as desired.*/
+
+h1, h2 {
+   color: #FFCC00;
+   font-family: 'Lato', sans-serif;
+}
+
+p, h3, h4, h5, h6 {
+   font-family: 'Lato', sans-serif;
+}
+
+/*These make sure the fonts of the entire page all match.
+I made the headline stand out in a different color.*/
+
+
+.miniphoto img {
+   float: left;
+   height: 100px;
+   width: 100px;
+}
+
+.container1 h3, h4 {
+   float: left;
+   color: black;
+   width: 48%;
+   margin-right: 10%;
+   margin-left: 20px;
+}
+
+.container1 .printpiece {
+   padding-top: 100px;
+}
+
+/*These affect the box right under the parallax,
+including my picture, name, and the due date
+before the first paragraphs of my article.*/
+
+.video {
+   background-color: black;
+   height: 320px;
+   width: 70%;
+   margin: 0 auto;
+   margin-top: 5%;
+   margin-bottom: 10%;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.video video {
+   float: right;
+   height: 320px;
+   width: 67%;
+   margin: 0 auto;
+}
+
+.video .text {
+   float: left;
+   background-color: #FFCC00;
+   width: 30%;
+   min-height: 100%;
+   padding-left: 10px;
+}
+
+/*This formats the video section for my broadcast piece,
+making sure the video goes on the right of the text box,
+which matches the headline's color.*/
+
+.bigcontainer {
+   background-color: whitesmoke;
+   padding-bottom: 5%;
+}
+
+/*This was just to format the container that holds all the other parts!
+The background separates the content blocks from each other
+and the padding at the bottom gives the end of my article some space.*/
+
+.photogallery {
+   width: 70%;
+   margin: 0 auto;
+   background-color: white;
+   margin-top: 5%;
+   overflow: hidden;
+}
+
+.square1 {
+   background-color: white;
+   width: 33%;
+}
+
+@media only screen and (max-width: 640px){
+   .flexbox {
+      display: block;
+   }
+   .flexsquare {
+      margin: 1%;
+   }
+}
+
+
+.photocard {
+   float: left;
+   /*overflow: auto;*/
+   /*display: flex;*/
+   max-width: 33%;
+   max-height: 30%;
+   margin: .1%; 
+}
+
+.photocard img {
+   width: 100%;
+   position: relative;
+}
+
+.square1 {
+   padding-left: 5px;
+   padding-right: 5px;
+   margin-right: -10px;
+   overflow: auto;
+}
+
+.photocard .audiotext {
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.7);
+   margin-top: -127px;
+   color: white;
+   width: 18%;
+   height: 15%;
+   padding-left: 4%;
+   padding-right: 1%;
+   display: none;
+}
+
+.audiotext h4 {
+   color: white;
+   float: left;
+   width: 100%;
+}
+
+.audiotext p {
+   float: left;
+   width: 100%;
+}
+
+/*All of this is for the audio rollover photogallery!
+Making sure they appear in a grid, including the hover caption,
+and ensuring that spacing remains the same regardless of 
+the page's width on a screen.*/
+
+
+.paralax2  {
+   z-index: -1;
+   position: sticky;
+   top: 0;
+}
+
+.paralaxh6 {
+   position: absolute;
+   z-index: 1;
+   color: white;
+   text-align: center;
+   font-size: 18pt;
+   background-color: rgba(0, 0, 0, 0.7);
+   bottom: 0;
+   width: 100%;
+   height: 200px;
+}
+
+.paralax2 img {
+   width: 100vw;
+}
+
+/*This formats the second parallax closer to the end of the page!*/
+
+
+
+

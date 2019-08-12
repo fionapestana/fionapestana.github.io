@@ -1,0 +1,15 @@
+Fiona Pestana
+Final Project
+J320 Intro to Coding / Spring 2019
+3 May 2019
+
+Summary:
+This March, USC was involved in the "Varsity Blues" college admissions scandal, which accused parents, college counselors, coaches, and others of bribery that led to the admission of undergraduate students at schools like Yale and USC. On May 1, the students who went through this year's college admission process had to decide which four-year universities — including the ones involved in the scandal — they will attend. This project illustrates with multimedia elements the opinions of many players involved in the application process and industry, from parents and students to tutors and college counselors. My reporting is based in Santa Monica, my assigned community for this semester.
+
+Required components:
+In this project, I created two parallax images, incorporated my print and broadcast portions of the assignment, and added a roll-over audio slideshow. Most of the project went smoothly, simply following the guidelines and previous assignments that taught me how to code the elements (including layout of text and imagery, incorporation of parallax images, making a photo gallery, etc.). 
+
+My code is organized in a few different divs. My parallax at the top is its own, while the "big container" includes everything underneath (except for the second parallax image. I continued the big container after that). Each block of text (and sometimes images) is its own container, and the video and photo gallery sections are also their own containers, labeled by their contents instead of "container1," "container2," etc. My CSS page is mostly top to bottom following the elements in html, and the biggest part of my jquery is the audio slideshow, which includes elements that 1) let the audio play and 2) let the caption appear.
+
+The most difficult part was getting the audio on the slideshow to play when I hovered while in Chrome. It was working in Safari, and I spent nearly two hours researching how to get it to work. Now, as long as you click on the page at some point before hovering over the images, audio will play.
+
